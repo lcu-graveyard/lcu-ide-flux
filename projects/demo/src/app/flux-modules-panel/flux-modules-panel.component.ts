@@ -4,11 +4,11 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   selector: 'lcu-flux-modules-panel',
   template: `
     <p>
-      flux-modules-panel works!
+      <slot name="title">flux-modules-panel works!</slot>
     </p>
   `,
   styles: [],
-  encapsulation: ViewEncapsulation.Native
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class FluxModulesPanelComponent implements OnInit {
 
